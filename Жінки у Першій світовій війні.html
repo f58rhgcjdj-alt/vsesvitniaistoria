@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Жінки в роки Першої світової війни</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Nunito+Sans:wght@400;600&display=swap">
+<style>
+:root{--bg:#10262e;--ink:#eaeff0;--mist:#9fb6bd;--rose:#e8a79c;--brass:#d4a94f;--poppy:#c8342b;box-sizing:border-box}
+*{box-sizing:border-box;margin:0}
+html,body{height:100%;overflow:hidden;background:var(--bg);color:var(--ink);font-family:"Nunito Sans",system-ui,sans-serif}
+.s{position:absolute;inset:0;display:grid;grid-template-columns:1.1fr .9fr;gap:4vw;align-items:center;padding:calc(6vh + env(safe-area-inset-top,0px)) 7vw calc(9vh + env(safe-area-inset-bottom,0px));visibility:hidden;transition:none;clip-path:var(--from);background:var(--g)}
+.s.on,.s.prev{visibility:visible;clip-path:var(--to)}
+.s.on{z-index:2;transition:clip-path 1.1s cubic-bezier(.7,0,.2,1)}
+.s.prev{z-index:1}
+.t1{--from:circle(0% at 50% 50%);--to:circle(150% at 50% 50%)}
+.t2{--from:inset(0 0 0 100%);--to:inset(0)}
+.t3{--from:inset(100% 0 0 0);--to:inset(0)}
+.t4{--from:circle(0% at 0% 100%);--to:circle(150% at 0% 100%)}
+.t5{--from:inset(0 100% 0 0);--to:inset(0)}
+h1,h2{font-family:"Cormorant Garamond",Georgia,serif;font-weight:700;line-height:1.02;letter-spacing:-.01em}
+h1{font-size:clamp(2.6rem,7vw,5.6rem)}
+h2{font-size:clamp(2rem,4.6vw,3.6rem);margin-bottom:.5em}
+.yr{color:var(--brass);font-family:"Cormorant Garamond",serif;font-size:1.3rem;margin-bottom:.6em}
+p{font-size:clamp(.95rem,1.55vw,1.2rem);line-height:1.6;max-width:36em;color:#d5dfe2;margin-bottom:.8em}
+p b{color:var(--rose);font-weight:600}
+.by{margin-top:1.6em;padding-left:1em;border-left:3px solid var(--poppy);font-size:1.05rem;color:var(--ink)}
+.art{justify-self:center;width:min(100%,38vh*1.05,340px);aspect-ratio:3/4;border-radius:999px 999px 18px 18px;overflow:hidden;border:2px solid var(--brass);box-shadow:0 0 0 8px rgba(212,169,79,.12)}
+.art svg{width:100%;height:100%;display:block}
+.on .a{animation:up .9s cubic-bezier(.2,.7,.2,1) both}
+.on .a:nth-child(2){animation-delay:.55s}.on .a:nth-child(3){animation-delay:.7s}.on .a:nth-child(4){animation-delay:.85s}.on .a:nth-child(5){animation-delay:1s}
+.on .art{animation:rise 1.3s cubic-bezier(.2,.7,.2,1) .35s both}
+@keyframes up{from{opacity:0;transform:translateY(26px)}}
+@keyframes rise{from{opacity:0;transform:translateY(40px) scale(.92)}}
+nav{position:fixed;left:0;right:0;bottom:0;z-index:9;display:flex;justify-content:center;align-items:center;gap:14px;padding:12px 0 calc(12px + env(safe-area-inset-bottom,0px))}
+nav button{width:40px;height:40px;border-radius:50%;border:1.5px solid var(--brass);background:rgba(16,38,46,.6);color:var(--ink);font-size:1.1rem;cursor:pointer}
+nav button:focus-visible{outline:3px solid var(--rose);outline-offset:2px}
+#dots{display:flex;gap:8px}
+#dots i{width:9px;height:9px;border-radius:50%;background:var(--mist);opacity:.4;transition:.4s}
+#dots i.on{background:var(--brass);opacity:1;width:26px;border-radius:6px}
+@media(max-width:760px){.s{grid-template-columns:1fr;align-content:center;gap:2.5vh;padding-top:calc(4vh + env(safe-area-inset-top,0px))}.art{order:-1;width:min(46vw,30vh*.75*1.3);max-height:30vh}h2{margin-bottom:.3em}p{font-size:.92rem;line-height:1.5}}
+@media(prefers-reduced-motion:reduce){.s.on{transition:none}.on .a,.on .art{animation:none}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute"><defs>
+<symbol id="bust" viewBox="0 0 100 100"><path d="M8 100c0-26 18-38 42-38s42 12 42 38z" fill="var(--cl,#8fa9b3)"/><rect x="42" y="50" width="16" height="16" rx="6" fill="#e8c9b0"/><ellipse cx="50" cy="36" rx="17" ry="20" fill="#e8c9b0"/><path d="M31 34c0-18 12-24 20-24s19 6 19 24c-4-9-10-12-19-12s-16 3-20 12z" fill="var(--hr,#3b2a24)"/></symbol>
+<symbol id="cross" viewBox="0 0 10 10"><path d="M3.5 1h3v2.5H9v3H6.5V9h-3V6.5H1v-3h2.5z" fill="#c8342b"/></symbol>
+</defs></svg>
+
+<!-- 1 -->
+<section class="s t1 on" style="--g:radial-gradient(circle at 75% 30%,#3a2030,#10262e 65%)">
+<div><p class="yr a">1914 – 1918</p><h1 class="a">Жінки у Першій світовій війні</h1><p class="a" style="margin-top:.8em">Медсестри, вчені, солдати, робітниці: як жінки змінили хід війни й власну долю.</p><div class="by a">Презентацію підготувала<br><b style="color:var(--ink);font-size:1.25rem">Лисич Софія, 10-В клас</b></div></div>
+<div class="art"><svg viewBox="0 0 300 400"><defs><linearGradient id="d1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5b2a3c"/><stop offset="1" stop-color="#1d3a44"/></linearGradient></defs><rect width="300" height="400" fill="url(#d1)"/><circle cx="220" cy="90" r="34" fill="#d4a94f" opacity=".85"/><path d="M0 330c60-30 120-10 300-40v110H0z" fill="#0d1f26"/><g stroke="#2f5a2f" stroke-width="3" fill="none"><path d="M70 400c0-60 4-100 0-150M150 400c2-50-2-80 6-120M230 400c-4-40 0-70-8-100"/></g><g transform="translate(150 170)" fill="#c8342b"><g id="pt"><ellipse cx="0" cy="-42" rx="30" ry="40"/></g><use href="#pt" transform="rotate(72)"/><use href="#pt" transform="rotate(144)"/><use href="#pt" transform="rotate(216)"/><use href="#pt" transform="rotate(288)"/><circle r="15" fill="#1a1a1a"/></g></svg></div>
+</section>
+
+<!-- 2 -->
+<section class="s t2" style="--g:linear-gradient(120deg,#10262e,#1b3540 60%,#2a2b3d)">
+<div><p class="yr a">Тил і фронт</p><h2 class="a">Жінки стали опорою країн</h2><p class="a">Мільйони чоловіків пішли на фронт, і їхнє місце зайняли <b>жінки</b>: на заводах, у трамваях, на полях, у лікарнях. У Британії на військових підприємствах працювало майже мільйон жінок.</p><p class="a">Вони виробляли снаряди, керували транспортом і годували країни. Без їхньої праці війна тривала б значно менше.</p></div>
+<div class="art"><svg viewBox="0 0 300 400"><rect width="300" height="400" fill="#294653"/><g fill="#12262d"><rect x="20" y="190" width="150" height="140"/><rect x="40" y="110" width="22" height="90"/><rect x="90" y="140" width="22" height="60"/><path d="M170 230l60-40v140h-60z"/></g><g fill="#d4a94f" opacity=".85"><rect x="36" y="220" width="18" height="24"/><rect x="72" y="220" width="18" height="24"/><rect x="108" y="220" width="18" height="24"/><rect x="144" y="220" width="18" height="24"/></g><g fill="#9fb6bd" opacity=".45"><circle cx="52" cy="96" r="14"/><circle cx="68" cy="72" r="18"/><circle cx="92" cy="52" r="22"/></g><rect y="330" width="300" height="70" fill="#0d1f26"/><g><use href="#bust" x="60" y="290" width="60" height="60" style="--cl:#e8a79c"/><use href="#bust" x="130" y="280" width="70" height="70" style="--cl:#d4a94f;--hr:#7a3b22"/><use href="#bust" x="205" y="292" width="60" height="60" style="--cl:#9fb6bd;--hr:#20232a"/></g></svg></div>
+</section>
+
+<!-- 3 -->
+<section class="s t3" style="--g:radial-gradient(circle at 20% 80%,#3c1f2b,#10262e 60%)">
+<div><p class="yr a">Едіт Кавелл, 1865 – 1915</p><h2 class="a">Медсестра, яка рятувала</h2><p class="a">Британка, старша медсестра лікарні в окупованому Брюсселі. Вона допомогла втекти до нейтральних Нідерландів близько <b>200 солдатів</b> союзних армій.</p><p class="a">Німецька влада заарештувала її та розстріляла 12 жовтня 1915 року. Ім'я Едіт Кавелл стало символом мужності та милосердя.</p></div>
+<div class="art"><svg viewBox="0 0 300 400"><rect width="300" height="400" fill="#33505c"/><circle cx="150" cy="150" r="120" fill="#456876" opacity=".6"/><g transform="translate(35 120) scale(2.3)"><use href="#bust" width="100" height="100" style="--cl:#e9eef0;--hr:#5b4636"/><path d="M28 24c4-16 40-16 44 0-6-4-38-4-44 0z" fill="#fff"/><use href="#cross" x="44" y="8" width="12" height="12"/></g><use href="#cross" x="215" y="30" width="55" height="55"/><g transform="translate(40 340)"><rect x="0" y="12" width="14" height="40" fill="#e8dcc0"/><path d="M7 12c-8-12 0-16 0-22 6 6 8 12 0 22z" fill="#d4a94f"/></g></svg></div>
+</section>
+
+<!-- 4 -->
+<section class="s t4" style="--g:linear-gradient(140deg,#10262e,#1c3b3b 55%,#2d3a2a)">
+<div><p class="yr a">Марія Кюрі, 1867 – 1934</p><h2 class="a">Рентген на колесах</h2><p class="a">Двічі лауреатка Нобелівської премії створила пересувні рентгенівські установки, яких прозвали <b>«малими Кюрі»</b>. Вони приїжджали до шпиталів прямо біля лінії фронту.</p><p class="a">Разом із донькою Ірен, якій було лише 17, Марія навчала операторів. Знімки допомогли лікарям знайти кулі й уламки та врятувати понад мільйон поранених.</p></div>
+<div class="art"><svg viewBox="0 0 300 400"><rect width="300" height="400" fill="#1e3b3f"/><g stroke="#d4a94f" stroke-width="2.5" opacity=".7"><path d="M150 180L40 40M150 180L110 20M150 180L190 20M150 180L260 40M150 180L285 120M150 180L15 120"/></g><circle cx="150" cy="180" r="14" fill="#d4a94f"/><rect y="310" width="300" height="90" fill="#0d1f26"/><g><rect x="50" y="230" width="150" height="70" rx="8" fill="#e9eef0"/><rect x="200" y="250" width="55" height="50" rx="6" fill="#9fb6bd"/><rect x="212" y="258" width="30" height="20" fill="#1e3b3f"/><use href="#cross" x="90" y="238" width="52" height="52"/><g fill="#0d1f26"><circle cx="90" cy="304" r="16"/><circle cx="222" cy="304" r="16"/></g><g fill="#9fb6bd"><circle cx="90" cy="304" r="7"/><circle cx="222" cy="304" r="7"/></g></g></svg></div>
+</section>
+
+<!-- 5 -->
+<section class="s t5" style="--g:radial-gradient(circle at 80% 20%,#2f3552,#10262e 65%)">
+<div><p class="yr a">На передовій</p><h2 class="a">Лікарки й солдатки</h2><p class="a"><b>Елсі Інглис</b> зі Шотландії заснувала жіночі госпіталі й вивезла їх до Сербії, коли чоловічі медичні служби відмовили їй.</p><p class="a"><b>Мілунка Савич</b> воювала в сербській армії й отримала французький орден Почесного легіону. <b>Марія Бочкарьова</b> у 1917 році очолила російський «Жіночий батальйон смерті».</p></div>
+<div class="art"><svg viewBox="0 0 300 400"><rect width="300" height="400" fill="#2c3e52"/><g opacity=".5" fill="#10262e"><path d="M0 300l60-70 50 40 60-90 60 80 70-60v200H0z"/></g><g transform="translate(10 150) scale(1.35)"><use href="#bust" width="100" height="100" style="--cl:#e9eef0;--hr:#7a4a2a"/><path d="M26 22c8-16 40-16 48 0z" fill="#fff"/></g><g transform="translate(100 130) scale(1.6)"><use href="#bust" width="100" height="100" style="--cl:#5a6b3e;--hr:#2a2018"/><path d="M28 26c2-20 42-20 44 0z" fill="#3f4a2c"/><circle cx="50" cy="12" r="3" fill="#d4a94f"/></g><g transform="translate(180 160) scale(1.25)"><use href="#bust" width="100" height="100" style="--cl:#6b5a3e;--hr:#20232a"/><path d="M24 24c4-18 48-18 52 0z" fill="#8a7a5e"/><path d="M50 12l3 6h-6z" fill="#c8342b"/></g><g fill="#d4a94f"><rect x="20" y="330" width="260" height="3"/></g></svg></div>
+</section>
+
+<!-- 6 -->
+<section class="s t1" style="--g:linear-gradient(160deg,#10262e,#1a3a4a 50%,#3b3a1c)">
+<div><p class="yr a">Українські січові стрільчині</p><h2 class="a">Українки в лавах УСС</h2><p class="a">У війську Українських січових стрільців служили жінки. <b>Олена Степанів</b> стала однією з перших українок-офіцерок і згодом відомою істориком, <b>Софія Галечко</b> воювала як стрілець.</p><p class="a">Багато українок працювали санітарками, збирали допомогу пораненим і берегли національну пам'ять.</p></div>
+<div class="art"><svg viewBox="0 0 300 400"><rect width="300" height="200" fill="#2b6cb0"/><rect y="200" width="300" height="200" fill="#e0b73a"/><rect width="300" height="400" fill="#10262e" opacity=".35"/><g transform="translate(40 110) scale(2.2)"><use href="#bust" width="100" height="100" style="--cl:#4a5a3a;--hr:#4a2f1e"/><path d="M28 24c4-16 40-16 44 0z" fill="#3a4a2c"/><circle cx="50" cy="10" r="3.5" fill="#d4a94f"/></g><g stroke="#e0b73a" stroke-width="3" fill="none"><path d="M40 90c20 10 60 10 80-6"/></g></svg></div>
+</section>
+
+<!-- 7 -->
+<section class="s t2" style="--g:radial-gradient(circle at 30% 30%,#22394a,#10262e 65%)">
+<div><p class="yr a">Наслідки війни</p><h2 class="a">Право голосу як нагорода</h2><p class="a">Війна довела, що жінки здатні на будь-яку роботу. Вже у 1917–1920 роках виборче право отримали жінки в Росії, Британії (з 30 років), Німеччині, Австрії, Польщі та США.</p><p class="a">Пам'ять про героїнь Першої світової нагадує: свобода й мир потребують мужності кожного.</p><div class="by a">Дякую за увагу!<br><b style="color:var(--ink)">Лисич Софія, 10-В клас</b></div></div>
+<div class="art"><svg viewBox="0 0 300 400"><rect width="300" height="400" fill="#3a3550"/><circle cx="150" cy="120" r="70" fill="#d4a94f" opacity=".2"/><rect x="60" y="210" width="180" height="130" rx="10" fill="#e9eef0"/><rect x="100" y="228" width="100" height="10" rx="5" fill="#10262e"/><rect x="118" y="90" width="64" height="100" rx="4" fill="#fff" transform="rotate(-6 150 140)"/><path d="M132 140l12 14 24-30" stroke="#c8342b" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round" transform="rotate(-6 150 140)"/><use href="#cross" x="122" y="262" width="56" height="56"/></svg></div>
+</section>
+
+<nav><button id="pv" aria-label="Назад">‹</button><div id="dots"></div><button id="nx" aria-label="Далі">›</button></nav>
+<script>
+const S=[...document.querySelectorAll('.s')],D=document.getElementById('dots');let i=0;
+S.forEach(()=>D.appendChild(document.createElement('i')));
+const u=()=>[...D.children].forEach((d,k)=>d.classList.toggle('on',k===i));u();
+function go(n){if(n<0||n>=S.length||n===i)return;const p=S[i];p.classList.remove('on');p.classList.add('prev');setTimeout(()=>p.classList.remove('prev'),1150);i=n;S[i].classList.add('on');u()}
+pv.onclick=()=>go(i-1);nx.onclick=()=>go(i+1);
+addEventListener('keydown',e=>{if(['ArrowRight','ArrowDown',' ','PageDown'].includes(e.key))go(i+1);if(['ArrowLeft','ArrowUp','PageUp'].includes(e.key))go(i-1)});
+let x0=null;addEventListener('touchstart',e=>x0=e.touches[0].clientX,{passive:true});
+addEventListener('touchend',e=>{if(x0===null)return;const d=e.changedTouches[0].clientX-x0;if(Math.abs(d)>50)go(i+(d<0?1:-1));x0=null});
+</script>
+</body>
+</html>
